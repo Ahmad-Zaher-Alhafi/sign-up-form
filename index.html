@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up-form</title>
+    <link rel="stylesheet" href="css.css">
+    <script src="js.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="leftContainer">
+            <img src="./Pictures/halie-west-25xggax4bSA-unsplash.jpg" alt="Plant picture" class="plantImg">
+            <div class="logoArea">
+                <img src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png"
+                    alt="Odin logo" class="logo">
+                <div class="odinText">Odin</div>
+            </div>
+            <div class="photoRefernce">Photo by <a href="http://">Halie West</a> on <a href="http://">Unsplash</a></div>
+        </div>
+
+        <div class="rightContainer">
+            <div class="descriptionContainer">
+                <p class="description">This is not a real onlince service! You know you need something<br>
+                    like this in your life to help you realize your deepest dreams.<br>
+                    Sign up now and get started.
+                    <br>
+                    <br>
+                    You know you want to.
+                </p>
+            </div>
+            <div class="formContainer">
+                <div class="formHeader">Let's do this!</div>
+                <form action="" method="post" id="form">
+                    <div class="smallContainer">
+                        <div class="firstNameField">
+                            <label for="firstName">FIRST NAME</label>
+                            <input type="text" id="firstName">
+                        </div>
+                        <div class="lastNameField">
+                            <label for="lastName">LAST NAME</label>
+                            <input type="text" id="lastName">
+                        </div>
+                    </div>
+                    <div class="smallContainer">
+                        <div class="emailField">
+                            <label for="email">EMAIL</label>
+                            <input type="email" id="email" placeholder="name@example.com">
+                        </div>
+                        <div class="phoneField">
+                            <label for="phoneNumber">PHONE NUMBER</label>
+                            <input type="number" id="phoneNumber">
+                        </div>
+                    </div>
+                    <div class="smallContainer">
+                        <div class="passwordField">
+                            <label for="password">* PASSWORD</label>
+                            <input type="password" id="password" required>
+                        </div>
+                        <div class="confirmField">
+                            <label for="confirmPassword">* CONFIRM PASSWORD</label>
+                            <input type="text" id="confirmPassword" required>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="CreateAccountContainer">
+                <button type="submit" form="form">Create Account</button>
+                <div>Already have an account? <a href="http://" class="login">Log in</a></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

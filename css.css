@@ -1,0 +1,188 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'norse-bold';
+    src: url("./Fonts/Norse-Bold.otf");
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    /* overflow: hidden; */
+}
+
+
+/* Left container */
+
+.leftContainer {
+    position: relative;
+}
+
+.logoArea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 16%;
+    position: absolute;
+    top: 25%;
+    background-color: rgba(0, 0, 0, .3)
+}
+
+.plantImg {
+    height: 100%;
+    width: 100%;
+}
+
+.logo {
+    height: 80%;
+    width: auto;
+    opacity: 1;
+}
+
+.odinText {
+    font-family: "norse-bold", sans-serif;
+    font-size: 100px;
+    color: white;
+}
+
+.photoRefernce {
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+}
+
+
+/* Right container */
+
+
+.rightContainer {
+    --shadow: 3px 3px 10px rgba(0, 0, 0, .3);
+    --rightContainerLeftPadding: 60px;
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+}
+
+.descriptionContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    background-color: aliceblue;
+    flex: 1;
+    padding-left: var(--rightContainerLeftPadding);
+}
+
+.description {
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 70px;
+}
+
+.formHeader {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+
+    background-color: white;
+    flex: .6;
+    padding: 20px 0 0 var(--rightContainerLeftPadding);
+    ;
+    gap: 40px;
+    box-shadow: var(--shadow);
+
+    z-index: 10;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.smallContainer {
+    display: flex;
+    gap: 60px;
+}
+
+div[class*="field"] {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    display: flex;
+    margin-bottom: 5px;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+input {
+    width: 200px;
+    height: 22px;
+    border-radius: 3px;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, .2);
+    outline: none;
+    padding-left: 10px;
+}
+
+input:focus {
+    box-shadow: var(--shadow);
+    border-width: 1px;
+    border-color: blue;
+}
+
+input :valid {
+    border-color: blue;
+}
+
+a:invalid,
+input:invalid {
+    border-color: red;
+}
+
+a {
+    color: white;
+}
+
+.login {
+    text-decoration: none;
+    color: #2c4611;
+}
+
+button {
+    background-color: #2c4611;
+    color: white;
+    border-radius: 5px;
+    width: 200px;
+    height: 45px;
+    font-size: large;
+    font-weight: bold;
+}
+
+button:active {
+    background-color: #3f4836;
+}
+
+.CreateAccountContainer {
+    padding: 40px 0 0 var(--rightContainerLeftPadding);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    background-color: azure;
+    flex: 1;
+    gap: 40px;
+}
